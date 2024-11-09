@@ -12,7 +12,7 @@
 ```
  - Clone TheNoobDevs-Staging twrp tree
 ```
-    git clone https://github.com/TND-STAGING/android_device_samsung_gta9.git -b twrp-14 device/samsung/gta9
+    git clone https://github.com/TND-STAGING/android_device_samsung_gta9.git -b staging device/samsung/gta9
 ```
  - Prepare
 ```
