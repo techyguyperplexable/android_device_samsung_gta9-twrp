@@ -1,0 +1,13 @@
+<!--Tab A9 code for AX6739A-1908 by hudongdong at 20230710 start-->
+<manifest version="1.0" type="device">
+	<hal format="hidl">
+        <name>android.hardware.camera.provider</name>
+        <transport>hwbinder</transport>
+        <version>2.6</version>
+        <interface>
+            <name>ICameraProvider</name>
+            <instance>internal/0</instance>
+        </interface>
+    </hal>
+</manifest>
+<!--Tab A9 code for AX6739A-1908 by hudongdong at 20230710 end-->

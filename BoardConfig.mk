@@ -131,7 +131,6 @@ BOOT_SECURITY_PATCH := 2099-12-31
 PLATFORM_VERSION := 14
 
 # TWRP Configuration
-TWRP_EVENT_LOGGING := true
 TW_INCLUDE_LPTOOLS := true
 TW_INCLUDE_REPACKTOOLS := true
 TW_INCLUDE_LIBRESETPROP := true
@@ -160,13 +159,16 @@ TW_NO_LEGACY_PROPS := true
 TW_NO_BIND_SYSTEM := true
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 TW_BACKUP_EXCLUSIONS := /data/fonts
-TWRP_INCLUDE_LOGCAT := true
-TARGET_USES_LOGD := true
 TW_NO_CPU_TEMP := true
 TW_DEVICE_VERSION := TND-14-C001
 
 # Battery correct percentage
 TW_CUSTOM_BATTERY_PATH := /sys/class/power_supply/battery/capacity
+
+# LOGGING
+TWRP_EVENT_LOGGING := true
+TWRP_INCLUDE_LOGCAT := true
+TARGET_USES_LOGD := true
 
 # Modules
 TW_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/recovery/root/lib/modules)\")
@@ -174,3 +176,7 @@ TW_LOAD_VENDOR_MODULES := true
 
 # env
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
+
+# Treble
+PRODUCT_ENFORCE_VINTF_MANIFEST := true
+PRODUCT_FULL_TREBLE := true
