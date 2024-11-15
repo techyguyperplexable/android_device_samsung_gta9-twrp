@@ -2,9 +2,9 @@
 
 # How-to compile it:
 
- - twrp-12.1 Manifest
+ - twrp-11 Manifest
 ```
-    repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-12.1
+    repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-11
 ```
  - Sync
 ```
@@ -12,7 +12,7 @@
 ```
  - Clone TheNoobDevs-Staging twrp tree
 ```
-    git clone https://github.com/TND-STAGING/android_device_samsung_gta9.git -b twrp-12.1 device/samsung/gta9
+    git clone https://github.com/TND-STAGING/android_device_samsung_gta9.git -b twrp-11 device/samsung/gta9
 ```
  - Build
 ```
