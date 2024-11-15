@@ -2,7 +2,7 @@
 
 # How-to compile it:
 
- - twrp-14 Manifest
+ - twrp-12.1 Manifest
 ```
     repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-12.1
 ```
