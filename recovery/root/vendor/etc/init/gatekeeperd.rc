@@ -1,3 +1,6 @@
+on fs
+   start gatekeeperd
+
 service gatekeeperd /system/bin/gatekeeperd /data/misc/gatekeeper
     class late_start
     user root
