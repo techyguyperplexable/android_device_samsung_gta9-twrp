@@ -8,6 +8,6 @@ service sem_daemon /system/bin/sem_daemon
     seclabel u:r:recovery:s0
 
 on early-boot
-    mkdir /efs/sec_efs/esek 0775 system system
+    mkdir /efs/sec_efs/esek 0775 root root
     start sem_daemon
 
