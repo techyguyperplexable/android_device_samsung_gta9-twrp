@@ -7,11 +7,7 @@
 
 LOCAL_PATH := device/samsung/gta9
 
-# API levels
-PRODUCT_SHIPPING_API_LEVEL := 30
-PRODUCT_TARGET_VNDK_VERSION := 32
-
-# Dynamic
+# Dynamic partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # fastbootd
@@ -49,14 +45,3 @@ RECOVERY_LIBRARY_SOURCE_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/android.hidl.memory.token@1.0.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libhidlmemory.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libgdrm.so \
-
-# Soong namespaces
-PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
-
-# Additional Packages
-PRODUCT_PACKAGES += \
-    otapreopt_script \
-    update_engine \
-    update_engine_sideload \
-    update_verifier \
