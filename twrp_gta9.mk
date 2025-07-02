@@ -1,26 +1,20 @@
 #
-# Copyright (C) 2024 The Android Open Source Project
-# Copyright (C) 2024 SebaUbuntu's TWRP device tree generator
+# Copyright (C) The Android Open Source Project
+# Copyright (C) SebaUbuntu's TWRP device tree generator
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+# Inherit from gta9pwifi device
+$(call inherit-product, device/samsung/gta9pwifi/device.mk)
 
-# Inherit some common twrp stuff.
+# Inherit from our custom product configuration
 $(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
-# Inherit from gta9 device
-$(call inherit-product, device/samsung/gta9/device.mk)
-
-#PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/samsung/gta9/recovery/root,recovery/root)
-
+## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := gta9
 PRODUCT_NAME := twrp_gta9
-PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-X115
-PRODUCT_MANUFACTURER := samsung
-
-PRODUCT_GMS_CLIENTID_BASE := android-samsung
+PRODUCT_BRAND := Samsung
+PRODUCT_MODEL := Samsung Galaxy Tab A9
+PRODUCT_MANUFACTURER := Samsung
